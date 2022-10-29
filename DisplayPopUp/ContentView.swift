@@ -15,7 +15,7 @@ struct ContentView: View {
         
         ZStack {
             
-            Color.mint
+            Color.blue
                 .edgesIgnoringSafeArea(.all)
             
             GeometryReader { buttonSize in
@@ -30,6 +30,7 @@ struct ContentView: View {
                             Image(systemName: "plus.circle.fill")
                                 .resizable()
                                 .scaledToFill()
+                                .foregroundColor(.yellow)
                             .frame(width: 60, height: 60)
                             Text("Add you list")
                                 .foregroundColor(.white)
